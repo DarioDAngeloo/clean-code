@@ -5,7 +5,7 @@ import retrofit2.http.GET
 
 interface AnimeApi {
 
-    @GET
+    @GET("/api/v2/pokemon/")
     suspend fun fetchAnimeFromApi(): Response<AnimeResponseWrapper<List<AnimeDto>>>
 
 }

@@ -19,7 +19,7 @@ object RoomModule {
     @Singleton
     fun provideAnimeDatabase(
         @ApplicationContext context: Context
-    ) = Room.databaseBuilder(context, AnimeDatabase::class.java, ANIME_DATABASE)
+    ) = Room.databaseBuilder(context, AnimeDatabase::class.java, ANIME_DATABASE).build()
 
     @Provides
     @Singleton
